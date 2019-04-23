@@ -16,9 +16,8 @@ public class Solution {
             int num = Integer.parseInt(tmp[0]);
             
             StringBuilder s = new StringBuilder(tmp[1]);
-            if(i < n/2) s = new StringBuilder("-");//use - as s for first half
+            if(i < n/2) s = new StringBuilder("-");
             
-            //add the string to the queue associated with num
             if(!order.containsKey(num))
             {
                 Queue<StringBuilder> strs = new LinkedList();
@@ -29,7 +28,6 @@ public class Solution {
             frequencies[num] = frequencies[num] + 1;
         }
         
-        //For all sorted numbers
         for(int i = 0; i < frequencies.length; i++)
         {
             for(int j = 0; j < frequencies[i]; j++)
