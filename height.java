@@ -30,7 +30,7 @@ class Solution {
     int rightHeight = 1;
     if (root != null){
         if (root.left != null){
-            leftHeight = height(root.left);
+            leftHeight = height(root.left)+1;
         }
         if (root.right != null){
             rightHeight = height(root.right);
